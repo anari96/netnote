@@ -6,7 +6,7 @@ return [
     | Google application name
     |----------------------------------------------------------------------------
     */
-    'application_name' => env('GOOGLE_APPLICATION_NAME', 'Web client 1'),
+    'application_name' => env('GOOGLE_APPLICATION_NAME', ''),
 
     /*
     |----------------------------------------------------------------------------
@@ -17,9 +17,9 @@ return [
     | https://developers.google.com/console
     |
     */
-    'client_id' => env('GOOGLE_CLIENT_ID', '276715392287-9id4cr0sqtlter9i5b5croklne3jfg8k.apps.googleusercontent.com'),
-    'client_secret' => env('GOOGLE_CLIENT_SECRET', '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'),
-    'redirect_uri' => env('GOOGLE_REDIRECT', 'http://127.0.0.1:8000/config/login'),
+    'client_id' => env('GOOGLE_CLIENT_ID', ''),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET', ''),
+    'redirect_uri' => env('GOOGLE_REDIRECT', ''),
     'scopes' => [],
     'access_type' => 'online',
     'approval_prompt' => 'auto',
@@ -33,7 +33,7 @@ return [
     | a Server key, and not a Browser key.
     |
     */
-    'developer_key' => env('GOOGLE_DEVELOPER_KEY', 'AIzaSyBwwn2HQFMcPxVSqUe3CnZYJLw200wbEIM'),
+    'developer_key' => env('GOOGLE_DEVELOPER_KEY', ''),
 
     /*
     |----------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
          * Path to service account json file. You can also pass the credentials as an array
          * instead of a file path.
          */
-        'file' => env('GOOGLE_SERVICE_ACCOUNT_JSON_LOCATION', storage_path("app/client_secret_276715392287-9id4cr0sqtlter9i5b5croklne3jfg8k.apps.googleusercontent.com.json")),
+        'file' => env('GOOGLE_SERVICE_ACCOUNT_JSON_LOCATION', ""),
     ],
 
     /*
