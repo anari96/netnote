@@ -17,7 +17,7 @@ use App\Http\Controllers\DocumentController;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
+    return view('index');
 });
 
 Route::get('config/revokeAccess', [ConfigController::class, "revokeAccess"])->name('config.revokeAccess');
